@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		211BD789E0CBD9D90B2FC9F0 /* libPods-JETestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1F440279E9633D1FD0C456 /* libPods-JETestTests.a */; };
 		2E49D318354BB1B32F837D79 /* libPods-JETest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962B73EEC58D1E3F3D1D46C2 /* libPods-JETest.a */; };
+		F0BB29281CB52C9400347E54 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BB29271CB52C9400347E54 /* ModelTests.m */; };
+		F0BB292C1CB52DFC00347E54 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BB292B1CB52DFC00347E54 /* Restaurant.m */; };
+		F0BB292D1CB52DFC00347E54 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BB292B1CB52DFC00347E54 /* Restaurant.m */; };
 		F0F0ABD11CB50E8A00EF5388 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0ABD01CB50E8A00EF5388 /* main.m */; };
 		F0F0ABD41CB50E8A00EF5388 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0ABD31CB50E8A00EF5388 /* AppDelegate.m */; };
 		F0F0ABD71CB50E8A00EF5388 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0ABD61CB50E8A00EF5388 /* ViewController.m */; };
@@ -42,6 +45,9 @@
 		C59FF3BE6131FCA8C8198001 /* Pods-JETest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JETest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JETest/Pods-JETest.release.xcconfig"; sourceTree = "<group>"; };
 		DAA6C137D6D4075A1C981277 /* Pods-JETestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JETestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JETestTests/Pods-JETestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEC1B346C40E469CAA9490CD /* Pods-JETestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JETestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JETestTests/Pods-JETestTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0BB29271CB52C9400347E54 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
+		F0BB292A1CB52DFC00347E54 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		F0BB292B1CB52DFC00347E54 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		F0F0ABCC1CB50E8A00EF5388 /* JETest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JETest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F0ABD01CB50E8A00EF5388 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0F0ABD21CB50E8A00EF5388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +112,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F0BB29291CB52DE600347E54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0BB292A1CB52DFC00347E54 /* Restaurant.h */,
+				F0BB292B1CB52DFC00347E54 /* Restaurant.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		F0F0ABC31CB50E8900EF5388 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +146,7 @@
 		F0F0ABCE1CB50E8A00EF5388 /* JETest */ = {
 			isa = PBXGroup;
 			children = (
+				F0BB29291CB52DE600347E54 /* Model */,
 				F0F0ABD21CB50E8A00EF5388 /* AppDelegate.h */,
 				F0F0ABD31CB50E8A00EF5388 /* AppDelegate.m */,
 				F0F0ABD51CB50E8A00EF5388 /* ViewController.h */,
@@ -156,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				F0F0ABEB1CB50E8A00EF5388 /* Info.plist */,
+				F0BB29271CB52C9400347E54 /* ModelTests.m */,
 			);
 			path = JETestTests;
 			sourceTree = "<group>";
@@ -398,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BB292C1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0F0ABD71CB50E8A00EF5388 /* ViewController.m in Sources */,
 				F0F0ABD41CB50E8A00EF5388 /* AppDelegate.m in Sources */,
 				F0F0ABD11CB50E8A00EF5388 /* main.m in Sources */,
@@ -408,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BB292D1CB52DFC00347E54 /* Restaurant.m in Sources */,
+				F0BB29281CB52C9400347E54 /* ModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
