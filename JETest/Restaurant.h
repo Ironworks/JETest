@@ -10,8 +10,8 @@
 
 @interface Restaurant : NSObject
 
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *rating;
+@property (nonatomic, copy, readonly) NSString *name;
+@property (nonatomic, copy, readonly) NSString *rating;
 @property (nonatomic, strong, readonly) NSArray *foodTypes;
 
 
