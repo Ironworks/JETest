@@ -14,7 +14,8 @@
 
 @implementation Restaurant
 
-- (instancetype)initWithName:(NSString *)name rating:(NSString *)rating foodTypes:(NSArray *)foodTypes {
+- (instancetype)initWithName:(NSString *)name rating:(NSString *)rating foodTypes:(NSArray *)foodTypes
+{
     
     if (self = [super init]) {
         _name = name;

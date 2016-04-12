@@ -64,7 +64,7 @@
 
     }];
     
-    [self waitForExpectationsWithTimeout:50.0 handler:^(NSError * _Nullable error) {
+    [self waitForExpectationsWithTimeout:10.0 handler:^(NSError * _Nullable error) {
         if (error) {
             NSLog(@"Error occured: %@", error.localizedDescription);
         }
@@ -100,7 +100,7 @@
                                         
     }];
     
-    [self waitForExpectationsWithTimeout:50.0 handler:^(NSError * _Nullable error) {
+    [self waitForExpectationsWithTimeout:10.0 handler:^(NSError * _Nullable error) {
         if (error) {
             NSLog(@"Error occured: %@", error.localizedDescription);
         }

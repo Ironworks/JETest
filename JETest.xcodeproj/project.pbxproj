@@ -23,6 +23,12 @@
 		F0F597251CBD076B009C7AEC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597241CBD076B009C7AEC /* NetworkManager.m */; };
 		F0F597261CBD076B009C7AEC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597241CBD076B009C7AEC /* NetworkManager.m */; };
 		F0F597291CBD15A8009C7AEC /* Restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F597281CBD15A8009C7AEC /* Restaurants.json */; };
+		F0F5972B1CBD251F009C7AEC /* RestaurantManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5972A1CBD251F009C7AEC /* RestaurantManagerTests.m */; };
+		F0F5972F1CBD28AB009C7AEC /* RestaurantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5972E1CBD28AB009C7AEC /* RestaurantManager.m */; };
+		F0F597301CBD28AB009C7AEC /* RestaurantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5972E1CBD28AB009C7AEC /* RestaurantManager.m */; };
+		F0F597321CBD2AF4009C7AEC /* RestaurantBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597311CBD2AF4009C7AEC /* RestaurantBuilderTests.m */; };
+		F0F597351CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */; };
+		F0F597361CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,12 @@
 		F0F597231CBD076B009C7AEC /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Networking/NetworkManager.h; sourceTree = "<group>"; };
 		F0F597241CBD076B009C7AEC /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Networking/NetworkManager.m; sourceTree = "<group>"; };
 		F0F597281CBD15A8009C7AEC /* Restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurants.json; sourceTree = "<group>"; };
+		F0F5972A1CBD251F009C7AEC /* RestaurantManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantManagerTests.m; sourceTree = "<group>"; };
+		F0F5972D1CBD28AB009C7AEC /* RestaurantManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantManager.h; sourceTree = "<group>"; };
+		F0F5972E1CBD28AB009C7AEC /* RestaurantManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantManager.m; sourceTree = "<group>"; };
+		F0F597311CBD2AF4009C7AEC /* RestaurantBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantBuilderTests.m; sourceTree = "<group>"; };
+		F0F597331CBD31B8009C7AEC /* RestaurantBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantBuilder.h; sourceTree = "<group>"; };
+		F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,8 @@
 			children = (
 				F0BB292A1CB52DFC00347E54 /* Restaurant.h */,
 				F0BB292B1CB52DFC00347E54 /* Restaurant.m */,
+				F0F597331CBD31B8009C7AEC /* RestaurantBuilder.h */,
+				F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -154,6 +168,7 @@
 		F0F0ABCE1CB50E8A00EF5388 /* JETest */ = {
 			isa = PBXGroup;
 			children = (
+				F0F5972C1CBD2761009C7AEC /* Restaurant Manager */,
 				F0F597221CBD0741009C7AEC /* Networking */,
 				F0BB29291CB52DE600347E54 /* Model */,
 				F0F0ABD21CB50E8A00EF5388 /* AppDelegate.h */,
@@ -184,6 +199,8 @@
 				F0F0ABEB1CB50E8A00EF5388 /* Info.plist */,
 				F0BB29271CB52C9400347E54 /* ModelTests.m */,
 				F0F597201CBCFCD2009C7AEC /* NetworkManagerTests.m */,
+				F0F5972A1CBD251F009C7AEC /* RestaurantManagerTests.m */,
+				F0F597311CBD2AF4009C7AEC /* RestaurantBuilderTests.m */,
 			);
 			path = JETestTests;
 			sourceTree = "<group>";
@@ -212,6 +229,15 @@
 				F0F597281CBD15A8009C7AEC /* Restaurants.json */,
 			);
 			name = "Test Fixtures";
+			sourceTree = "<group>";
+		};
+		F0F5972C1CBD2761009C7AEC /* Restaurant Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F0F5972D1CBD28AB009C7AEC /* RestaurantManager.h */,
+				F0F5972E1CBD28AB009C7AEC /* RestaurantManager.m */,
+			);
+			name = "Restaurant Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F597351CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */,
+				F0F5972F1CBD28AB009C7AEC /* RestaurantManager.m in Sources */,
 				F0BB292C1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0F0ABD71CB50E8A00EF5388 /* ViewController.m in Sources */,
 				F0F0ABD41CB50E8A00EF5388 /* AppDelegate.m in Sources */,
@@ -456,10 +484,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F597301CBD28AB009C7AEC /* RestaurantManager.m in Sources */,
 				F0F597261CBD076B009C7AEC /* NetworkManager.m in Sources */,
+				F0F597321CBD2AF4009C7AEC /* RestaurantBuilderTests.m in Sources */,
 				F0F597211CBCFCD2009C7AEC /* NetworkManagerTests.m in Sources */,
 				F0BB292D1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0BB29281CB52C9400347E54 /* ModelTests.m in Sources */,
+				F0F597361CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */,
+				F0F5972B1CBD251F009C7AEC /* RestaurantManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
