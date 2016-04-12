@@ -19,6 +19,10 @@
 		F0F0ABDC1CB50E8A00EF5388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0F0ABDB1CB50E8A00EF5388 /* Assets.xcassets */; };
 		F0F0ABDF1CB50E8A00EF5388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0F0ABDD1CB50E8A00EF5388 /* LaunchScreen.storyboard */; };
 		F0F0ABF51CB50E8A00EF5388 /* JETestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0ABF41CB50E8A00EF5388 /* JETestUITests.m */; };
+		F0F597211CBCFCD2009C7AEC /* NetworkManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597201CBCFCD2009C7AEC /* NetworkManagerTests.m */; };
+		F0F597251CBD076B009C7AEC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597241CBD076B009C7AEC /* NetworkManager.m */; };
+		F0F597261CBD076B009C7AEC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597241CBD076B009C7AEC /* NetworkManager.m */; };
+		F0F597291CBD15A8009C7AEC /* Restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F597281CBD15A8009C7AEC /* Restaurants.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		F0F0ABF01CB50E8A00EF5388 /* JETestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JETestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F0ABF41CB50E8A00EF5388 /* JETestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JETestUITests.m; sourceTree = "<group>"; };
 		F0F0ABF61CB50E8A00EF5388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F597201CBCFCD2009C7AEC /* NetworkManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManagerTests.m; sourceTree = "<group>"; };
+		F0F597231CBD076B009C7AEC /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Networking/NetworkManager.h; sourceTree = "<group>"; };
+		F0F597241CBD076B009C7AEC /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Networking/NetworkManager.m; sourceTree = "<group>"; };
+		F0F597281CBD15A8009C7AEC /* Restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurants.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,7 @@
 		F0F0ABCE1CB50E8A00EF5388 /* JETest */ = {
 			isa = PBXGroup;
 			children = (
+				F0F597221CBD0741009C7AEC /* Networking */,
 				F0BB29291CB52DE600347E54 /* Model */,
 				F0F0ABD21CB50E8A00EF5388 /* AppDelegate.h */,
 				F0F0ABD31CB50E8A00EF5388 /* AppDelegate.m */,
@@ -171,8 +180,10 @@
 		F0F0ABE81CB50E8A00EF5388 /* JETestTests */ = {
 			isa = PBXGroup;
 			children = (
+				F0F597271CBD1593009C7AEC /* Test Fixtures */,
 				F0F0ABEB1CB50E8A00EF5388 /* Info.plist */,
 				F0BB29271CB52C9400347E54 /* ModelTests.m */,
+				F0F597201CBCFCD2009C7AEC /* NetworkManagerTests.m */,
 			);
 			path = JETestTests;
 			sourceTree = "<group>";
@@ -184,6 +195,23 @@
 				F0F0ABF61CB50E8A00EF5388 /* Info.plist */,
 			);
 			path = JETestUITests;
+			sourceTree = "<group>";
+		};
+		F0F597221CBD0741009C7AEC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F0F597231CBD076B009C7AEC /* NetworkManager.h */,
+				F0F597241CBD076B009C7AEC /* NetworkManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		F0F597271CBD1593009C7AEC /* Test Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F0F597281CBD15A8009C7AEC /* Restaurants.json */,
+			);
+			name = "Test Fixtures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F597291CBD15A8009C7AEC /* Restaurants.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +447,7 @@
 				F0BB292C1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0F0ABD71CB50E8A00EF5388 /* ViewController.m in Sources */,
 				F0F0ABD41CB50E8A00EF5388 /* AppDelegate.m in Sources */,
+				F0F597251CBD076B009C7AEC /* NetworkManager.m in Sources */,
 				F0F0ABD11CB50E8A00EF5388 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F597261CBD076B009C7AEC /* NetworkManager.m in Sources */,
+				F0F597211CBCFCD2009C7AEC /* NetworkManagerTests.m in Sources */,
 				F0BB292D1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0BB29281CB52C9400347E54 /* ModelTests.m in Sources */,
 			);
