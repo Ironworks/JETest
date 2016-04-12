@@ -10,8 +10,7 @@
 #import "NetworkManager.h"
 #import "RestaurantBuilder.h"
 #import "Restaurant.h"
-
-NSString * const kErrorDomain = @"com.justeat";
+#import "Constants.h"
 
 @interface RestaurantManager ()
 

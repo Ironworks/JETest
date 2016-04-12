@@ -29,6 +29,11 @@
 		F0F597321CBD2AF4009C7AEC /* RestaurantBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597311CBD2AF4009C7AEC /* RestaurantBuilderTests.m */; };
 		F0F597351CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */; };
 		F0F597361CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */; };
+		F0F5973C1CBD6AAC009C7AEC /* LocationServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5973B1CBD6AAC009C7AEC /* LocationServicesManager.m */; };
+		F0F5973D1CBD6AAC009C7AEC /* LocationServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5973B1CBD6AAC009C7AEC /* LocationServicesManager.m */; };
+		F0F597401CBDB435009C7AEC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5973F1CBDB435009C7AEC /* Constants.m */; };
+		F0F597411CBDB435009C7AEC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5973F1CBDB435009C7AEC /* Constants.m */; };
+		F0F597431CBDB62B009C7AEC /* LocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597421CBDB62B009C7AEC /* LocationManagerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,11 @@
 		F0F597311CBD2AF4009C7AEC /* RestaurantBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantBuilderTests.m; sourceTree = "<group>"; };
 		F0F597331CBD31B8009C7AEC /* RestaurantBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantBuilder.h; sourceTree = "<group>"; };
 		F0F597341CBD31B8009C7AEC /* RestaurantBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantBuilder.m; sourceTree = "<group>"; };
+		F0F5973A1CBD6AAC009C7AEC /* LocationServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationServicesManager.h; sourceTree = "<group>"; };
+		F0F5973B1CBD6AAC009C7AEC /* LocationServicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationServicesManager.m; sourceTree = "<group>"; };
+		F0F5973E1CBDB435009C7AEC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F0F5973F1CBDB435009C7AEC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		F0F597421CBDB62B009C7AEC /* LocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManagerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +178,7 @@
 		F0F0ABCE1CB50E8A00EF5388 /* JETest */ = {
 			isa = PBXGroup;
 			children = (
+				F0F597391CBD6A94009C7AEC /* Location Manager */,
 				F0F5972C1CBD2761009C7AEC /* Restaurant Manager */,
 				F0F597221CBD0741009C7AEC /* Networking */,
 				F0BB29291CB52DE600347E54 /* Model */,
@@ -175,6 +186,8 @@
 				F0F0ABD31CB50E8A00EF5388 /* AppDelegate.m */,
 				F0F0ABD51CB50E8A00EF5388 /* ViewController.h */,
 				F0F0ABD61CB50E8A00EF5388 /* ViewController.m */,
+				F0F5973E1CBDB435009C7AEC /* Constants.h */,
+				F0F5973F1CBDB435009C7AEC /* Constants.m */,
 				F0F0ABD81CB50E8A00EF5388 /* Main.storyboard */,
 				F0F0ABDB1CB50E8A00EF5388 /* Assets.xcassets */,
 				F0F0ABDD1CB50E8A00EF5388 /* LaunchScreen.storyboard */,
@@ -201,6 +214,7 @@
 				F0F597201CBCFCD2009C7AEC /* NetworkManagerTests.m */,
 				F0F5972A1CBD251F009C7AEC /* RestaurantManagerTests.m */,
 				F0F597311CBD2AF4009C7AEC /* RestaurantBuilderTests.m */,
+				F0F597421CBDB62B009C7AEC /* LocationManagerTests.m */,
 			);
 			path = JETestTests;
 			sourceTree = "<group>";
@@ -238,6 +252,15 @@
 				F0F5972E1CBD28AB009C7AEC /* RestaurantManager.m */,
 			);
 			name = "Restaurant Manager";
+			sourceTree = "<group>";
+		};
+		F0F597391CBD6A94009C7AEC /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F0F5973A1CBD6AAC009C7AEC /* LocationServicesManager.h */,
+				F0F5973B1CBD6AAC009C7AEC /* LocationServicesManager.m */,
+			);
+			name = "Location Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F5973C1CBD6AAC009C7AEC /* LocationServicesManager.m in Sources */,
 				F0F597351CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */,
 				F0F5972F1CBD28AB009C7AEC /* RestaurantManager.m in Sources */,
 				F0BB292C1CB52DFC00347E54 /* Restaurant.m in Sources */,
@@ -477,6 +501,7 @@
 				F0F0ABD41CB50E8A00EF5388 /* AppDelegate.m in Sources */,
 				F0F597251CBD076B009C7AEC /* NetworkManager.m in Sources */,
 				F0F0ABD11CB50E8A00EF5388 /* main.m in Sources */,
+				F0F597401CBDB435009C7AEC /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,12 +509,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F597411CBDB435009C7AEC /* Constants.m in Sources */,
 				F0F597301CBD28AB009C7AEC /* RestaurantManager.m in Sources */,
+				F0F597431CBDB62B009C7AEC /* LocationManagerTests.m in Sources */,
 				F0F597261CBD076B009C7AEC /* NetworkManager.m in Sources */,
 				F0F597321CBD2AF4009C7AEC /* RestaurantBuilderTests.m in Sources */,
 				F0F597211CBCFCD2009C7AEC /* NetworkManagerTests.m in Sources */,
 				F0BB292D1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0BB29281CB52C9400347E54 /* ModelTests.m in Sources */,
+				F0F5973D1CBD6AAC009C7AEC /* LocationServicesManager.m in Sources */,
 				F0F597361CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */,
 				F0F5972B1CBD251F009C7AEC /* RestaurantManagerTests.m in Sources */,
 			);
