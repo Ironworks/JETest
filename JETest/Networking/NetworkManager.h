@@ -10,12 +10,12 @@
 
 @interface NetworkManager : NSObject
 
-typedef void (^success) (NSArray *restaurantsArray);
-typedef void (^failure) (NSString *message, NSUInteger statusCode);
+typedef void (^apiSuccess) (NSArray *restaurantsArray);
+typedef void (^apiFailure) (NSString *message, NSUInteger statusCode);
 
 
 - (void)retrieveRestaurantsForOutcode:(NSString *)outcode
-                              success:(success)success
-                            failure:(failure)failure;
+                              success:(apiSuccess)success
+                            failure:(apiFailure)failure;
 
 @end

@@ -36,6 +36,9 @@
     self.locationManager.delegate = self;
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
     [self.locationManager startUpdatingLocation];
 }
 
@@ -49,20 +52,26 @@
      {
          if (!(error))
          {
-             if (self.successBlock) {
-                 CLPlacemark *placemark = [placemarks objectAtIndex:0];
-                 NSString *postCode = [[NSString alloc]initWithString:placemark.postalCode];
-                 NSArray *postCodeComponents = [postCode componentsSeparatedByString:@" "];
-                 self.successBlock(postCodeComponents[0]);
-             }
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 if (self.successBlock) {
+                     CLPlacemark *placemark = [placemarks objectAtIndex:0];
+                     NSString *postCode = [[NSString alloc]initWithString:placemark.postalCode];
+                     NSArray *postCodeComponents = [postCode componentsSeparatedByString:@" "];
+                     self.successBlock(postCodeComponents[0]);
+                 }
+
+             });
              
          }
          else
          {
              if (self.failureBlock) {
-                 NSDictionary *userInfo = @{NSLocalizedDescriptionKey : @"Outcode not found"};
-                 NSError *error = [NSError errorWithDomain:kCLErrorDomain code:1003 userInfo:userInfo];
-                 self.failureBlock(error);
+                 dispatch_async(dispatch_get_main_queue(), ^{
+                     NSDictionary *userInfo = @{NSLocalizedDescriptionKey : @"Outcode not found"};
+                     NSError *error = [NSError errorWithDomain:kCLErrorDomain code:1003 userInfo:userInfo];
+                     self.failureBlock(error);
+
+                 });
              }
              
          }

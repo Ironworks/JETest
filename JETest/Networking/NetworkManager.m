@@ -14,20 +14,22 @@
 NSString * const kURL = @"https://public.je-apis.com/restaurants";
 
 - (void)retrieveRestaurantsForOutcode:(NSString *)outcode
-                              success:(success)success
-                              failure:(failure)failure
+                              success:(apiSuccess)success
+                              failure:(apiFailure)failure
 {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
     NSDictionary *parameters = @{@"q":outcode};
     
+
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"Get" URLString:kURL parameters:parameters error:nil];
     [request addValue:@"uk" forHTTPHeaderField:@"Accept-Tenant"];
     [request addValue:@"en-GB" forHTTPHeaderField:@"Accept-Language"];
-    [request addValue:@"Basic VGVjaFRlc3RBUEk6dXNlcjI=" forHTTPHeaderField:@"Authorisation"];
-    [request addValue:@"piblic.je-api.com" forHTTPHeaderField:@"Host"];
-    
+    [request addValue:@"Basic VGVjaFRlc3RBUEk6dXNlcjI=" forHTTPHeaderField:@"Authorization"];
+    [request addValue:@"public.je-apis.com" forHTTPHeaderField:@"Host"];
+
+   
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
             NSHTTPURLResponse *httpResp = (NSHTTPURLResponse *)response;
@@ -39,8 +41,6 @@ NSString * const kURL = @"https://public.je-apis.com/restaurants";
             });
             
         } else {
-            
-            
             
             NSArray *restaurants = responseObject[@"Restaurants"];
             

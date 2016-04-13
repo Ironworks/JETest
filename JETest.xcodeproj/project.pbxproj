@@ -34,6 +34,8 @@
 		F0F597401CBDB435009C7AEC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5973F1CBDB435009C7AEC /* Constants.m */; };
 		F0F597411CBDB435009C7AEC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F5973F1CBDB435009C7AEC /* Constants.m */; };
 		F0F597431CBDB62B009C7AEC /* LocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597421CBDB62B009C7AEC /* LocationManagerTests.m */; };
+		F0F597461CBDC5A5009C7AEC /* RestaurantListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597451CBDC5A5009C7AEC /* RestaurantListTableViewController.m */; };
+		F0F5974A1CBDE15C009C7AEC /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F597491CBDE15C009C7AEC /* RestaurantTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,10 @@
 		F0F5973E1CBDB435009C7AEC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		F0F5973F1CBDB435009C7AEC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		F0F597421CBDB62B009C7AEC /* LocationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManagerTests.m; sourceTree = "<group>"; };
+		F0F597441CBDC5A5009C7AEC /* RestaurantListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantListTableViewController.h; sourceTree = "<group>"; };
+		F0F597451CBDC5A5009C7AEC /* RestaurantListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantListTableViewController.m; sourceTree = "<group>"; };
+		F0F597481CBDE15C009C7AEC /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		F0F597491CBDE15C009C7AEC /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 		F0F0ABCE1CB50E8A00EF5388 /* JETest */ = {
 			isa = PBXGroup;
 			children = (
+				F0F597471CBDE13D009C7AEC /* TableView Cells */,
 				F0F597391CBD6A94009C7AEC /* Location Manager */,
 				F0F5972C1CBD2761009C7AEC /* Restaurant Manager */,
 				F0F597221CBD0741009C7AEC /* Networking */,
@@ -188,6 +195,8 @@
 				F0F0ABD61CB50E8A00EF5388 /* ViewController.m */,
 				F0F5973E1CBDB435009C7AEC /* Constants.h */,
 				F0F5973F1CBDB435009C7AEC /* Constants.m */,
+				F0F597441CBDC5A5009C7AEC /* RestaurantListTableViewController.h */,
+				F0F597451CBDC5A5009C7AEC /* RestaurantListTableViewController.m */,
 				F0F0ABD81CB50E8A00EF5388 /* Main.storyboard */,
 				F0F0ABDB1CB50E8A00EF5388 /* Assets.xcassets */,
 				F0F0ABDD1CB50E8A00EF5388 /* LaunchScreen.storyboard */,
@@ -261,6 +270,15 @@
 				F0F5973B1CBD6AAC009C7AEC /* LocationServicesManager.m */,
 			);
 			name = "Location Manager";
+			sourceTree = "<group>";
+		};
+		F0F597471CBDE13D009C7AEC /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F0F597481CBDE15C009C7AEC /* RestaurantTableViewCell.h */,
+				F0F597491CBDE15C009C7AEC /* RestaurantTableViewCell.m */,
+			);
+			name = "TableView Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,12 +511,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F5974A1CBDE15C009C7AEC /* RestaurantTableViewCell.m in Sources */,
 				F0F5973C1CBD6AAC009C7AEC /* LocationServicesManager.m in Sources */,
 				F0F597351CBD31B8009C7AEC /* RestaurantBuilder.m in Sources */,
 				F0F5972F1CBD28AB009C7AEC /* RestaurantManager.m in Sources */,
 				F0BB292C1CB52DFC00347E54 /* Restaurant.m in Sources */,
 				F0F0ABD71CB50E8A00EF5388 /* ViewController.m in Sources */,
 				F0F0ABD41CB50E8A00EF5388 /* AppDelegate.m in Sources */,
+				F0F597461CBDC5A5009C7AEC /* RestaurantListTableViewController.m in Sources */,
 				F0F597251CBD076B009C7AEC /* NetworkManager.m in Sources */,
 				F0F0ABD11CB50E8A00EF5388 /* main.m in Sources */,
 				F0F597401CBDB435009C7AEC /* Constants.m in Sources */,
